@@ -59,15 +59,16 @@ const HeroSection = () => {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 via-emerald-500 to-orange-500 p-[4px] shadow-xl">
             {/* Inner Dark Circle with Image */}
             <div className="rounded-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 w-full h-full overflow-hidden flex items-center justify-center">
-                <Image
-                src="/images/main.jpeg"
-                alt="hero image"
-                className="object-cover w-full h-full"
-                width={400}
-                height={400}
-                priority
-                />
-            </div>
+            <Image
+              src="/images/main.jpeg"  // <-- change this to your image file
+              alt="Profile picture"
+              className="object-cover w-full h-full"
+              width={400}
+              height={400}
+              priority
+            />
+          </div>
+
             </div>
         </div>
         </motion.div>
