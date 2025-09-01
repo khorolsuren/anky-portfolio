@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",  // for static export
+    output: "export",
     basePath: "/anky-portfolio",
     assetPrefix: "/anky-portfolio/",
     images: {
