@@ -24,7 +24,9 @@ const Navbar = () => {
             e.preventDefault();
             window.location.reload(); // <-- forces full reload
           }}
-          className="relative text-4xl md:text-xl font-extrabold glitch-text cursor-pointer"
+          // CORRECTED: Apply a smaller font size for mobile first (text-2xl)
+          // Then apply the larger size for medium screens and up (md:text-xl)
+          className="relative text-2xl md:text-xl font-extrabold glitch-text cursor-pointer"
         >
           story-is-king-pictures
         </a>
