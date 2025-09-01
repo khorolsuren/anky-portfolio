@@ -36,7 +36,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-4 lg:text-sm">
-          Anky Cyriaque is a Haitian-born, Brooklyn-raised director whose love for storytelling began when he learned English through movies and television. Guided by the belief that “Story is King,” he has directed commercials for Jive Records, short films distributed by Shorts International, Now preparing for his feature debut Seasons, Anky continues to carve his own path in film—one built on culture, honesty, and vision.
+          Driven by a lifelong love of cinema, Anky Cyriaque creates films that explore identity, culture, and human connection—stories rooted in personal truth, yet made for the world.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             {/* Contact Me Button */}
