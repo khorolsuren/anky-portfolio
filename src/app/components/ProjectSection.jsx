@@ -29,14 +29,16 @@ const ProjectsSection = () => {
       id: 3,
       name: "The Hollywood Reporter",
       description: "Japanese Stars Join Cast of Anky Cyriaque’s ‘Seasons’.",
-      image: "/images/thr_logo.tiff",
+      // Corrected image path
+      image: "/anky-portfolio/images/thr_logo.png",
       link: "https://www.hollywoodreporter.com/movies/movie-news/anky-cyriaque-seasons-cast-serena-motola-seiya-matsudo-ray-shirakawa-1236111521/",
     },
     {
       id: 4,
       name: "Uptown Magazine",
       description: "Anky Cyriaque’s ‘Seasons’ debut film is already a game-changer",
-      image: "/images/uptown.png",
+      // Corrected image path
+      image: "/anky-portfolio/images/uptown.png",
       link: "https://uptownmagazine.com/2025/03/19/anky-cyriaques-seasons-debut-film-is-already-a-game-changer/",
     },
     {
