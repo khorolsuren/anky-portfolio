@@ -6,18 +6,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
+  { title: "About", path: "#about" },
+  { title: "Projects", path: "#projects" },
+  { title: "Contact", path: "#contact" },
 ];
 
 const Navbar = () => {
@@ -28,15 +19,17 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* LOGO - force full page reload */}
         <a
-          href="/"
+          href="/anky-portfolio"
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "/"; // hard reload
+            window.location.reload(); // <-- forces full reload
           }}
           className="relative text-4xl md:text-xl font-extrabold glitch-text cursor-pointer"
         >
           story-is-king-pictures
         </a>
+
+        {/* Mobile Menu */}
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -54,6 +47,8 @@ const Navbar = () => {
             </button>
           )}
         </div>
+
+        {/* Desktop Menu */}
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
@@ -64,6 +59,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
